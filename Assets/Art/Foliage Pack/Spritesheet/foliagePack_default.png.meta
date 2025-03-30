@@ -214,6 +214,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: foliagePack_default_5
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 695
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036b4b03d37f2d7408859d7dd85b9a1f
+      internalID: 1647265496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foliagePack_default_6
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 645
+        width: 40
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.65}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b215fac2bf4da48871497efc9cdf9e
+      internalID: -205969035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foliagePack_default_7
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 0
+        width: 80
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec6f56069cda91246b5c32477953e8f4
+      internalID: -1721937194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -230,6 +293,9 @@ TextureImporter:
       foliagePack_default_2: -1343269499
       foliagePack_default_3: 1272657378
       foliagePack_default_4: -1878369034
+      foliagePack_default_5: 1647265496
+      foliagePack_default_6: -205969035
+      foliagePack_default_7: -1721937194
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
