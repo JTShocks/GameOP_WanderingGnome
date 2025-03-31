@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
         
     */
     
+    public int currentScore;
+
+    
 
 
     
