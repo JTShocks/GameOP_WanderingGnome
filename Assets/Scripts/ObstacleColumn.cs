@@ -24,7 +24,7 @@ public class ObstacleColumn : MonoBehaviour
         {
             //Move the column to the left
             transform.position += new Vector3(-scrollSpeed, 0) * Time.deltaTime;
-            if(transform.position.x <= -10)
+            if(transform.position.x <= -12)
             {
                 gameObject.SetActive(false);
             }

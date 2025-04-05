@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class ObjectBounceTween : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField]
+    float scaleFactor = 1.25f;
+    void OnEnable()
     {
-        
+        LeanTween.scale(gameObject, new Vector3(scaleFactor, scaleFactor, scaleFactor), 1f).setLoopPingPong().setEase(LeanTweenType.punch);
     }
 }

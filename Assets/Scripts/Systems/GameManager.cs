@@ -14,10 +14,13 @@ public class GameManager : MonoBehaviour
         
     */
 
+    public static Action StartGame;
     public float columnIntervalSeconds;
-    float targetTime;
+    float targetTime = 1;
     
     public int currentScore;
+
+    bool gameIsStarted;
 
     void OnEnable()
     {
@@ -31,15 +34,21 @@ public class GameManager : MonoBehaviour
         Debug.Log("Score has updated");
     }
 
-    void Start()
+    public void OnGameStart()
     {
+        StartGame.Invoke();
         ActivateNewLine();
         targetTime = columnIntervalSeconds;
+        gameIsStarted = true;
         
     }
 
     void Update()
     {
+        if(!gameIsStarted)
+        {
+            return;
+        }
         targetTime -= Time.deltaTime;
         if (targetTime <= 0.0f)
             {
