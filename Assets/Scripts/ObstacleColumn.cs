@@ -9,8 +9,8 @@ public class ObstacleColumn : MonoBehaviour
     public float scrollSpeed;
 
 
-    bool hasRock;
-    bool hasCrop;
+    bool hasRock = false;
+    bool hasCrop = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +35,8 @@ public class ObstacleColumn : MonoBehaviour
 
     public void OnActivate()
     {
+        hasRock = false;
+        hasCrop = false;
         int i = 0;
         //Randomly choose 
         while(i < 3)
