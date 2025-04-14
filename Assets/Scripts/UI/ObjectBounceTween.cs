@@ -11,4 +11,5 @@ public class ObjectBounceTween : MonoBehaviour
     {
         LeanTween.scale(gameObject, new Vector3(scaleFactor, scaleFactor, scaleFactor), 1f).setLoopPingPong().setEase(LeanTweenType.punch);
     }
+
 }

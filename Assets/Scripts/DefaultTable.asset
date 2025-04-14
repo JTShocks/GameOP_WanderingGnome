@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b31cd1e0c1f9a041b9d13ddabac9957, type: 3}
+  m_Name: DefaultTable
+  m_EditorClassIdentifier: 
+  obstacleChances:
+  - {fileID: 11400000, guid: f83aa99ad4f70d144b026837722fe6d5, type: 2}
+  - {fileID: 11400000, guid: f83aa99ad4f70d144b026837722fe6d5, type: 2}
+  - {fileID: 11400000, guid: f83aa99ad4f70d144b026837722fe6d5, type: 2}
+  - {fileID: 11400000, guid: 21069bc3eb815084dbf26725b6934c2c, type: 2}
+  - {fileID: 11400000, guid: 21069bc3eb815084dbf26725b6934c2c, type: 2}
+  - {fileID: 11400000, guid: 21069bc3eb815084dbf26725b6934c2c, type: 2}
+  - {fileID: 11400000, guid: 27fa0db18fd889a4084a0e3604bdc775, type: 2}
+  - {fileID: 11400000, guid: 27fa0db18fd889a4084a0e3604bdc775, type: 2}
+  - {fileID: 11400000, guid: 27fa0db18fd889a4084a0e3604bdc775, type: 2}
+  - {fileID: 11400000, guid: 78e9fa60b699b224ab8909b6cb87506a, type: 2}

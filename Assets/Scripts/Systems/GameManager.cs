@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using JT.Enums;
 using System;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,8 +16,11 @@ public class GameManager : MonoBehaviour
     */
 
     public static Action StartGame;
+    public static Action GameOver;
     public float columnIntervalSeconds;
     float targetTime = 1;
+
+    public TextMeshProUGUI scoreDisplay;
     
     public int currentScore;
 
@@ -26,12 +30,29 @@ public class GameManager : MonoBehaviour
     {
         ObstacleSlot.UpdateScore += OnUpdateScore;
     }
+    void OnDisable()
+    {
+        
+    }
 
     private void OnUpdateScore(int value)
     {
         currentScore += value;
         currentScore = Mathf.Max(0, currentScore);
-        Debug.Log("Score has updated");
+        scoreDisplay.text = currentScore.ToString();
+        
+        if(value < 0)
+        {
+            OnGameOver();
+        }
+        //Debug.Log("Score has updated");
+    }
+
+
+    void OnGameOver()
+    {
+        gameIsStarted = false;
+        GameOver.Invoke();
     }
 
     public void OnGameStart()

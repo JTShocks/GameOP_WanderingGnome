@@ -49,6 +49,7 @@ public class ObstacleSlot : MonoBehaviour
         Debug.Log("Made contact.");
         UpdateScore.Invoke(currentObstacle.PointValue);
         gameObject.SetActive(false);
+
     }
 
 }
