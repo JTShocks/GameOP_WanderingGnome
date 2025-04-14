@@ -7,7 +7,7 @@ using UnityEngine;
 public class ObstacleSlot : MonoBehaviour
 {
 
-    public List<Obstacle> obstacles;
+    public ObstacleTable table;
     public Obstacle currentObstacle;
 
     public SpriteRenderer spriteRenderer;
@@ -18,9 +18,9 @@ public class ObstacleSlot : MonoBehaviour
 
     public Obstacles AssignObstacle()
     {
-        int rng = UnityEngine.Random.Range(0,obstacles.Count - 1);
+        int rng = UnityEngine.Random.Range(0,table.obstacleChances.Count - 1);
 
-        currentObstacle = obstacles[rng];
+        currentObstacle = table.obstacleChances[rng];
         spriteRenderer.sprite = currentObstacle.ObstacleSprite;
         if(currentObstacle.ObstacleType == Obstacles.Rock)
         {
@@ -41,7 +41,7 @@ public class ObstacleSlot : MonoBehaviour
         }
 
         gameObject.SetActive(true);
-        return obstacles[rng].ObstacleType;
+        return table.obstacleChances[rng].ObstacleType;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
