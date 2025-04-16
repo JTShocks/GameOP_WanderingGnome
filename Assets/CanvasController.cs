@@ -38,7 +38,11 @@ public class CanvasController : MonoBehaviour
 
     private void HideTitleCard()
     {
-        LeanTween.move(titleCard, titleCard.transform.position + Vector3.up * 1000, 0.5f).setEaseInBack();  
+        if(titleCard != null)
+        {
+            LeanTween.move(titleCard, titleCard.transform.position + Vector3.up * 1000, 0.5f).setEaseInBack();  
+        }
+        
     }
 
     // Update is called once per frame
