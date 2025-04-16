@@ -4,10 +4,12 @@ using UnityEngine;
 using JT.Enums;
 using System;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
 
+    public GameObject loseText;
     public const float WORLD_MOVE_SPEED = 0.1f;
     public const float GLOBAL_COLUMN_SPEED = 1;
     /*
@@ -32,7 +34,7 @@ public class GameManager : MonoBehaviour
     }
     void OnDisable()
     {
-        
+        ObstacleSlot.UpdateScore -= OnUpdateScore;
     }
 
     private void OnUpdateScore(int value)
@@ -53,6 +55,7 @@ public class GameManager : MonoBehaviour
     {
         gameIsStarted = false;
         GameOver.Invoke();
+        loseText.SetActive(true);
     }
 
     public void OnGameStart()
@@ -92,6 +95,11 @@ public class GameManager : MonoBehaviour
         ObstacleColumn column = nextLine.GetComponent<ObstacleColumn>();
         column.scrollSpeed = GLOBAL_COLUMN_SPEED;
         column.OnActivate();
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(0);
     }
 
 
