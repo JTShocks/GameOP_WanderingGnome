@@ -3003,7 +3003,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Wander
+  m_text: 'Wandering
 
     Rabbit'
   m_isRightToLeft: 0
@@ -3068,7 +3068,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -152.50244, y: 0, z: -141.11328, w: -132.73373}
+  m_margin: {x: -295.7944, y: 0, z: -290.13242, w: -132.73373}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

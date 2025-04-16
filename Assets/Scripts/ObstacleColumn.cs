@@ -25,7 +25,7 @@ public class ObstacleColumn : MonoBehaviour
 
     private void StopColumn()
     {
-        currentScrollSpeed = 0;
+       // currentScrollSpeed = 0;
     }
 
     // Update is called once per frame
